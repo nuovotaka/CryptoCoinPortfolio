@@ -212,8 +212,6 @@ if __name__ == "__main__":
         portfolio_db = Db(protfolio_db_name)
         db_data = portfolio_db.db_output()
 
-    print(db_data)
-
     i = 0
     for coin in coin_model:
         current_value = market_data.at[coin, 'current_price']
